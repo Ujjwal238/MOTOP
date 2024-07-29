@@ -1,0 +1,3 @@
+26/07/2024
+set up pyhton, git/gitgub/IDE
+
