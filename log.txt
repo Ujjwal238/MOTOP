@@ -3,3 +3,5 @@ set up python, git/gitgub/IDE
 
 29/07/2024
 set up CUDA,Pytorch
+30/7/24
+Explored the resources, went through GPT-2.3 papers
