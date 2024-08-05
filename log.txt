@@ -7,3 +7,5 @@ set up CUDA,Pytorch
 Explored the resources, went through GPT-2.3 papers
 2/08/2024
 created target.py and checked the capabilities of the model 
+5/08/24
+read papers and other resources and worked on file
