@@ -11,3 +11,6 @@ created target.py and checked the capabilities of the model
 read papers and other resources and worked on file
 9/08/24
 started with the model.py,read gpt 2 paper made some findings about the tensor shapes and model, analysed gpt 2 huggingface model
+12/08/24
+read about embedding layer and tokenizers, added content to file, analyzed the tiktoken tokenizer
+

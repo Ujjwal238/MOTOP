@@ -6,8 +6,8 @@ for k ,v in sd_hf.items():
     print(k,v.shape)
 
 #wte is wieght token embedding -Size([50257, 768])   
-#there are 50257 token in gpt 2 vocab, for each token we have 768 embeddings i.e 
-#768 numbers are used to represent a token
+#there are 50257 token in gpt 2 vocab, for each token we have 768 dimentional embeddings i.e 
+#768 dimentional spaces are used to represent a token
 
 # wpe is wieght pos embedding -Size([1024, 768])
 # as context lenght is 1024 tokens we use 1024 positonal embedding
@@ -35,10 +35,11 @@ plt.show()
 from transformers import pipeline, set_seed
 generator = pipeline('text-generation', model='gpt2')
 set_seed(42)
-generator("Hello, I'm a language model,", max_length=30, num_return_sequences=5)
+generator("hey peter can you come over here your sister", max_length=30, num_return_sequences=5)
 
 #finding- setting seed to some constant still gives different outputs 
 #(no documentaion found )
 
 #%%
- 
+
+# %%
