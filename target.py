@@ -35,11 +35,35 @@ plt.show()
 from transformers import pipeline, set_seed
 generator = pipeline('text-generation', model='gpt2')
 set_seed(42)
-generator("hey peter can you come over here your sister", max_length=30, num_return_sequences=5)
+generator("momsaidtohissonthatcomebackhome", max_length=30, num_return_sequences=5)
 
 #finding- setting seed to some constant still gives different outputs 
 #(no documentaion found )
 
 #%%
+import tiktoken
+tokenizer = tiktoken.get_encoding("gpt2")
+text = "Hello, do you like tea? <|endoftext|> In"
+integers = tokenizer.encode(text, allowed_special={"<|endoftext|>"})
+print(integers)
 
 # %%
+#%%
+
+strings = tokenizer.decode(integers)
+print(strings)
+
+
+#finding "endoftext" is assigned a value of 50256 which is veery close to the
+#vocab size of 50257
+#BPE tokenizer can encode unkown words as well 
+#if the tokenizer encounters some unkown words
+#it breaks them down to subwords or even individual 
+#charecters, for more context you can try input giving GPT2 some 
+#input withoutspaces and it will understand it
+#  
+# %%
+import torch
+
+#%%
+
