@@ -1,0 +1,4 @@
+model.to('cuda') #defines to use model as cuda
+model.to('cpu') #defines to use model as cpu
+
+ gpt 2 is decoder only mmodel lacks the entire left part + the the cross attention
