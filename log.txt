@@ -17,3 +17,5 @@ read about embedding layer and tokenizers, added content to file, analyzed the t
 downloaded the toy data set ,started with making the embedding layer and data pipeline
 23/08/25
 finished input embedding
+2/9/24
+strated with sttention head

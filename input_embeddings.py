@@ -50,6 +50,7 @@ def create_dataloader_v1(txt, batch_size=4, max_length=256,
 
     return dataloader
 #%%
+# THIS JUST IMPORTS THE DATA
 with open("input_toy.txt", "r", encoding="utf-8") as f:
     raw_text = f.read()
 #%%
