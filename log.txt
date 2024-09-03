@@ -19,3 +19,6 @@ downloaded the toy data set ,started with making the embedding layer and data pi
 finished input embedding
 2/9/24
 strated with sttention head
+3/9/24
+made model structure
+
