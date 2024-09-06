@@ -22,3 +22,5 @@ strated with sttention head
 3/9/24
 made model structure
 
+6/09/24
+imported model weights from transformers model and implemented the gpt locally

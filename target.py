@@ -63,7 +63,40 @@ print(strings)
 #input withoutspaces and it will understand it
 #  
 # %%
-import torch
+with open('input_toy.txt','r') as f:
+    text=f.read()
+data = text[:1000]
+print(data[:100])
+
+#%%
+import tiktoken
+enc = tiktoken.get_encoding('gpt2')
+with open('input_toy.txt','r') as f:
+    text=f.read()
+tokens = enc.encode(text)
+#%%
+context_size = 4
+
+x = tokens[:context_size]
+y = tokens[1:context_size+1]
+
+print(f"x: {x}")
+print(f"y:      {y}")
+#%%
+for i in range(1, context_size+1):
+    context = tokens[:i]
+    desired = tokens[i]
+
+    print(context, "---->", desired)
+#%%
+for i in range(1, context_size+1):
+    context = tokens[:i]
+    desired = tokens[i]
+
+    print(enc.decode(context), "---->", enc.decode([desired]))
+#%%
+
+#%%
 
 #%%
 
