@@ -280,8 +280,8 @@ torch.set_float32_matmul_precision('high') #takes data presion down,increases sp
 
 #get logits
 model =GPT(GPTConfig(vocab_size=50304)) #random modell intialization
-#i increased and added a few fake tokens to make an odd number a nice number
-
+#i increased and added a few fake tokens to make an odd number a nice number(near 2 number)
+#they are never used and are driven to 0 anyway
 # model = GPT.from_pretrained('gpt2')
 model.to('cuda')
 

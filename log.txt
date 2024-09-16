@@ -27,4 +27,6 @@ imported model weights from transformers model and implemented the gpt locally
 
 14/09/24
 started training on toy dataset
+16/09/24
+optimized the model
 
