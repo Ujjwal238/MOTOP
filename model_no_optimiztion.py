@@ -80,7 +80,7 @@ class MLP (nn.Module):
 #i made this second 
 # this is inside the decoder block
 #it normalizes the input and then feeds to the cassual self attention funtion (it is
-# a change from the traditional arch in gpt 2)
+# a change from the traditional arch in gpt 2)configure_optimizers
 #then again normalizes it and adds
 #then it feeds it to mlp (aka feed forward network)
 
